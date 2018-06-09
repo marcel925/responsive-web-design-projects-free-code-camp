@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<style>
+
+#main {
+  border: 4px solid darkgrey;
+}
+
+#image {
+  display: block;
+  max-width: 600px;
+  width: 80%;
+  margin: auto;
+}
+
+.info-paragraphs {
+  text-align: left !important;
+}
+
+@media screen and (max-width: 400px) {
+  #title {
+    font-size: 190%;
+  }
+}
+
+</style>
+
+<!-- 
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>FreeCodeCamp - Tribute Page</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  </head>
+  
+  
+  <body>
+
+    <div id="main" class="container text-center">
+      <h1 id="title" class="container">
+        Arnold Schwarzenegger
+      </h1>
+        
+      <div id="img-div" class="container"> 
+        <img lass="container" id="image" src="https://addicted2success.com/wp-content/uploads/2015/02/Arnold-Schwarzenegger-Champion-BodyBuilder.jpg">
+        
+        <div id="img-caption" class="container">
+          Arnold Schwarzenegger Champion BodyBuilder
+        </div>
+        
+      </div>
+        
+      <div id="tribute-info" class="container">
+        <h4>
+          Arnold rose to the top and conquered 4 different fields.
+        </h4>
+        
+        <h5 class="paragraph-headings container"> 
+           First: Arnold conquered bodybuilding. 
+        </h5> 
+        
+        <p class="info-paragraphs container">             
+          He moved from Austria to California and became the youngest ever Mr Olympia Champion, aged 23. He went on to become a 7 time Mr Olympia Champion and a 4 time Mr Universe Winner.
+        </p>
+        
+        <h5 class="paragraph-headings container"> 
+          Second: Arnold conquered the business world. 
+        </h5>
+        
+        <p class="info-paragraphs container">
+          By the age of 30, Schwarzenegger was a millionaire, well before his career in Hollywood. He started with a bricklaying business. He used the profits from that to start a mail order business. Then, he invested those profits in real estate and other investments.
+        </p>
+        
+        <h5 class="paragraph-headings container"> 
+          Third: Arnold conquered Hollywood. 
+        </h5>
+        
+        <p class="info-paragraphs container">
+          He struggled at the beginning and was told many times that he should give up because his accent was too strong and his body was too big. He used these to his advantage and became the highest paid actor in 1991. His film "Terminator 2: Judgement Day" grossed over $500 million. He was a 1977 Golden Globe Award winner and he has a star on the Hollywood Walk of Fame.  
+        </p>
+        
+        <h5 class="paragraph-headings container"> 
+          Fourth: Arnold conquered politics.
+        </h5>
+        
+        <p class="info-paragraphs container">
+          In 2013, he became the governor of California, the higest attainable position in politics for a person who wasn't born in the United States.
+        </p>
+        
+        <p id="arnold-quote" class="container">
+         
+        <blockquote class="container">
+            "Money doesn't make you happy. I now have $50 million, but I was just as happy when I had $48 million"
+          <cite> 
+            Arnold Schwarzenegger
+          </cite>
+        </blockquote>
+
+        </p>
+
+        <p id="tribute-paragraph" class="container">
+          You can find more information about Arnold on 
+          <a id="tribute-link" 
+         href="https://en.wikipedia.org/wiki/Arnold_Schwarzenegger" 
+             target="_blank">
+            Arnold's Wikipedia Page
+          </a> 
+          or 
+          <a href="http://www.schwarzenegger.com" target="_blank">
+            Arnold's Official Website
+          </a>.
+
+        </p>
+            
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  </body>
+</html>

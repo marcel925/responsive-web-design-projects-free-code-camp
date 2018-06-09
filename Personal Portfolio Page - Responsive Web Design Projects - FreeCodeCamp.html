@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<style>
+
+.navitems a {
+  color: green;
+}
+
+#navbarAll {
+  padding: 20px;
+  margin-top: 0px;
+  position: fixed;
+  width: 95%;
+}
+
+#welcome-section {
+  height: 100vh;
+  min-height: 350px;
+  background-color: azure;
+}
+
+#welcomeNoNav {
+  padding-top: 15vh;
+}
+
+#contact-header-text, #project-header-text {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#projects {
+  background-color: rgb(248, 248, 248);
+}
+
+.projectBoxes {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#photo {
+  height: 150px;
+  width: auto;
+}
+
+.portfolio-images {
+  width: 250px;
+  height: auto;
+}
+
+#contact-section {
+  min-height: 300px;
+  background-color: LightCyan;
+}
+
+#facebook {
+  background-color: #3b5998; 
+}
+
+#profile-link {
+  background-color: black;
+}
+
+#email {
+  background-color: brown;
+}
+
+#call-me {
+  background-color: RosyBrown ;
+}
+
+#freecodecamp {
+  background-color: #0F7D11; 
+}
+
+#linkedin {
+  background-color: #0077B5;
+}
+
+.socialButtons {
+  border: 1px solid black !important;
+  margin: 10px;
+  width: 140px;
+}
+
+#lg-fcc {
+  display: inline-block;
+}
+
+#sm-fcc {
+  display: none;
+}
+
+#footerText {
+  text-align: right;
+  background-color: LightCyan;
+}
+
+@media screen and (max-width: 450px) {
+  #navBrand {
+   display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #navBrand {
+    font-size: 80%;
+  }
+ 
+  .portfolio-images {
+    width: 175px;
+  }
+  
+  .socialButtons {
+    margin: 10px;
+    width: 100px;
+  }
+  
+  #lg-fcc {
+    display: none;
+  }
+
+  #sm-fcc {
+    display: inline-block;
+  }
+}
+ 
+
+@media screen and (max-width: 325px) {
+  .socialButtons {
+    margin: 4px;
+    width: 70px;
+  }
+  
+  .navitems a {
+  font-size: 80%;
+  }
+  
+  .socialText {
+    font-size: 70%;
+  }
+  
+  .portfolio-images {
+    width: 145px;
+  }
+  
+  #footerText {
+    font-size: 80%;
+  }
+}
+
+</style>
+
+
+
+<!-- 
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>FreeCodeCamp - Personal Portfolio Page</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  </head>
+  
+  
+  <body>
+    
+    <div class="container-fluid" id="all">
+      
+      <div id="welcome-section" class="container-fluid">
+       
+        <nav id="navbarAll" class="navbar">
+ 
+          <div class="container-fluid">
+    
+            <div class="navbar-header">
+      
+              <a id="navBrand" class="navbar-brand">Marcel Moraru</a>
+    
+            </div>
+    
+            <div id="navbar" class="row">
+            
+              <div class="navitems col-4">
+                <a href="#welcomeNoNav">
+                  Welcome
+                </a>
+              </div>
+      
+              <div class="navitems col-4">
+                <a href="#projects">
+                  Projects
+                </a>
+              </div>
+      
+              <div class="navitems col-4">
+                <a href="#contact-section">
+                  Contact
+                </a>
+              </div>
+   
+            </div>
+  
+          </div>
+
+        </nav>
+        
+        <div id="welcomeNoNav" class="container text-center">
+          <h1>
+            Hey!
+          </h1>
+
+          <h3>
+            I am Marcel
+          </h3>
+
+          <h4>
+            <img id="photo" src="https://media.licdn.com/dms/image/C5603AQHJjuB9VrZ1pg/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=r8rbV4GxxCieccSIsi7ckZYPt7Cj3OG3c_iMlPw7xbI">
+          </h4>  
+
+          <h6> 
+            Scroll down to see some of my portfolio projects  
+          </h6>
+          
+        </div>
+        
+      </div>
+      
+      
+      <div id="projects">
+        
+        <div class="projects container-fluid">
+          
+          <h3 id="project-header-text" class="container text-center">
+            Some of my portfolio projects...
+          </h3>
+          
+          <div class="row">
+            
+            <div class="projectBoxes col-lg-4 col-md-6 col-sm-6 col-xs-12 text-center">
+          
+              
+              <div class="project-tile">
+                
+                <h5 class="text-center">
+                  JavaScript Calculator
+                </h5>
+
+              </div>
+
+              <div class="project-image">
+                
+                <img class="portfolio-images" src="http://www.marcelmoraru.com/calculator2.png">
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://codepen.io/marcel92/pen/oGabjK">JavaScript Calculator on Codepen</a>
+
+              </div>
+              
+            </div>
+            
+            
+            <div class="projectBoxes col-lg-4 col-md-6 col-sm-6 col-xs-12  text-center">
+
+              <div class="project-tile">
+                
+                <h5 class="text-center">
+                  Tic Tac Toe
+                </h5>
+
+              </div>
+
+              <div class="project-image">
+                
+                <img class="portfolio-images" src="http://www.marcelmoraru.com/tictactoeimage3.png">
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://codepen.io/marcel92/pen/wrmJZa">
+                  Tic Tac Toe on Codepen
+                </a>
+
+              </div>
+            
+            </div>
+            
+            
+            <div class="projectBoxes col-lg-4 col-md-6 col-sm-6 col-xs-12  text-center">
+            
+              <div class="project-tile">
+                
+                <h5 class="text-center">
+                  The Simon Game
+                </h5>
+
+              </div>
+
+              <div class="project-image">
+                
+                <img class="portfolio-images"  src="http://www.marcelmoraru.com/simongame2.png">
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://codepen.io/marcel92/pen/GMadpM">
+                  Simon Game on Codepen
+                </a>
+
+              </div>
+              
+            </div>
+
+
+            <div class="projectBoxes col-lg-4 col-md-6 col-sm-6 col-xs-12  text-center">
+            
+              <div class="project-title">
+                
+                <h5 class="text-center">
+                  Weather using API
+                </h5>
+
+              </div>
+
+              <div class="project-image">
+                
+                <img class="portfolio-images"  src="http://www.marcelmoraru.com/Weatherapp2.png">
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://codepen.io/marcel92/pen/oGLjgo">
+                  Weather using API on Codepen
+                </a>
+
+              </div>
+
+            </div>
+            
+            
+            <div class="projectBoxes col-lg-4 col-md-6 col-sm-6 col-xs-12  text-center">
+
+              <div class="project-title">
+                
+                <h5 class="text-center">
+                  Data Entry Form
+                </h5>
+
+              </div>
+
+              <div class="project-image">
+                
+                <img class="portfolio-images"  src="http://www.marcelmoraru.com/dataentryform.png">
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="http://www.marcelmoraru.com/dataentryform.html">
+                  Data Entry Form Link
+                </a>
+
+              </div>
+              
+            </div>
+
+            
+            <div class="projectBoxes col-lg-4 col-md-6 col-sm-6 col-xs-12  text-center">
+
+              <div class="project-title">
+                
+                <h5 class="text-center">
+                  Product Sales Page
+                </h5>
+
+              </div>
+
+              <div class="project-image">
+                
+                <img class="portfolio-images" src="http://www.marcelmoraru.com/productpage.png">
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://codepen.io/marcel92/pen/YvWqOj">
+                  Product Sales Page on Codepen
+                </a>
+
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      
+      <div id="contact-section" class="container-fluid">
+        
+        <h3 id="contact-header-text" class="text-center">
+          Want to get in touch with me?
+        </h3>
+        
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+            <a class="btn btn-primary socialButtons" id="call-me" href="http://www.marcelmoraru.com/MarcelMoraruCV.pdf" target="_blank">
+              <span class="socialText">
+                My CV
+              </span>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+            <a class="btn btn-primary socialButtons" id="email" href="mailto:marcel@marcelmoraru.com">
+              <span class="socialText">
+                Email Me
+              </span>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+            <a id="profile-link" target="_blank" class="btn btn-primary socialButtons" href="https://github.com/marcel925">
+              <span class="socialText">
+                Github
+              </span>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+            <a class="btn btn-primary socialButtons" target="_blank" id="facebook" href="https://www.facebook.com/marcel.moraru.1">
+              <span class="socialText">
+                Facebook
+              </span>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+            <a class="btn btn-primary socialButtons" id="linkedin" href="https://www.linkedin.com/in/marcelmoraru/" target="_blank">
+              <span class="socialText">
+                LinkedIn
+              </span>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+            <a class="btn btn-primary socialButtons" id="freecodecamp" href="https://www.freecodecamp.org/marcelmoraru" target="_blank">
+              <span id="lg-fcc" class="socialText">
+                FreeCodeCamp
+              </span>
+              <span id="sm-fcc" class="socialText">
+                FCC
+              </span> 
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+       
+    <p id="footerText">
+      Code written by Marcel Moraru
+    </p>
+    
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
+

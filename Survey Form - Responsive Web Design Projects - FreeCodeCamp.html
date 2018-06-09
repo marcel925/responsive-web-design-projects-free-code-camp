@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<style>
+
+#all {
+  border: 4px solid darkgrey;
+}
+
+.inputNames {
+  text-align: right;
+}
+
+</style>
+
+
+<!-- 
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Survey Form - FreeCodeCamp</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  </head>
+
+  
+  <body>
+    
+    <div class="container" id="all">
+      
+      <h1 id="title" class="container text-center">
+        Survey Form
+      </h1>
+      
+      <p id="description" class="container text-center">
+        Fill out the dating form below to see if we are a good match
+      </p>
+      
+      <form action="#" id="survey-form" class="container">
+        <p>
+          <div class="row">
+            <div class="col-5 inputNames" >
+              <label for="name" id="name-label"> 
+                Name:
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              <input id="name" type="text" name="name" placeholder="Enter your name" class="form-control" required>
+            </div>
+          </div>
+        </p>
+      
+        <p>    
+          <div class="row">
+            <div class="col-5 inputNames" >
+              <label for="email" id="email-label"> 
+                Email:
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              <input id="email" type="email" name="email" placeholder="Enter your email" class="form-control" required>
+            </div>
+          </div>     
+        </p>
+    
+        <p>    
+          <div class="row">
+            <div class="col-5 inputNames" >
+              <label for="age" id="number-label"> 
+                Age:
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              <input input id="number" type="number" name="age" placeholder="Enter your age" class="form-control" min="0" max="120" required>
+            </div>
+          </div>     
+        </p>
+  
+        <p>    
+          <div class="row">
+            <div class="col-5 inputNames" >
+              <label for="relationshipStatus" id="relationship-status-label"> 
+                What option describes best your relationship status?
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              <select id="dropdown" name="relationshipStatus" class="form-control" required>
+                <option selected disabled>
+                  Please select one
+                </option>
+                <option value="single">
+                  Single
+                </option>
+                <option value="relationship">
+                  In a relationship
+                </option>
+                <option value="engaged">
+                  Engaged
+                </option>
+                <option value="married">
+                  Married
+                </option>
+                <option value="divorced">
+                  Divorced
+                </option>
+                <option value="widowed">
+                  Widowed
+                </option>
+                <option value="complicated">
+                  It's complicated
+                </option>
+              </select>
+            </div>
+          </div>     
+        </p>  
+        
+        <p>    
+          <div class="row">
+            
+            <div class="col-5 inputNames" >
+              <label for="serious" id="serious"> 
+                Are you looking for a serious relationship?
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              
+              <div class="radio">
+                <label>
+                  <input type="radio" name="serious" value="yes">
+                  Yes
+                </label>
+              </div>
+    
+              <div class="radio">
+                <label>
+                  <input type="radio" name="serious" value="no">
+                  No
+                </label>
+              </div>
+    
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="serious" value="maybe">
+                  Maybe
+                </label>
+              </div>
+              
+            </div>
+            
+          </div>     
+        </p>
+
+        <p>    
+          <div class="row">
+            <div class="col-5 inputNames" >
+              <label for="interests" id="interests"> 
+                Check which of the following are included in your interests?
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="standupcomedy">
+                    Stand Up Comedy
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="surfing">
+                    Surfing
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="skiing">
+                    Skiing
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="snowboarding">
+                    Snowboarding
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="entrepreneurship">
+                    Entrepreneurship
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="reading-books">
+                    Reading Books
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="self-improvement">
+                    Self Improvement
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="coding">
+                    Coding
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="gym">
+                    Gym
+                </label>
+              </div>
+              
+            </div>
+          </div>     
+        </p>
+
+        <p>    
+          <div class="row">
+            <div class="col-5 inputNames" >
+              <label for="comments" id="comments"> 
+                Any additional comments:
+              </label>
+            </div>
+
+            <div class="col-7 inputBoxes">
+              <textarea id="comments" name="comments" class="form-control" placeholder="Any more comments?"></textarea>
+            </div>
+          </div>     
+        </p>
+
+        <p>
+          <div class="text-center">
+            <input id="submit" type="submit" value="Submit" class="btn btn-lg btn-success">
+          
+          </div> 
+        </p>  
+      </form>
+      
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
+
